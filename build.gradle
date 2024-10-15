@@ -24,11 +24,33 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // Spring Boot Web Starter (REST API 및 MVC 개발)
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Spring Security & JWT for authentication/authorization
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5' // Jackson으로 JWT 처리
+
+    // Spring Data JPA for database interactions
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // MySQL JDBC driver for MySQL database connection
+    runtimeOnly 'mysql:mysql-connector-java'
+
+    // Lombok for reducing boilerplate code
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // Thymeleaf for template rendering (if needed for front-end)
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'  // 서블릿 API 추가
+
+    // Testing dependencies
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    runtimeOnly 'com.mysql:mysql-connector-j'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
