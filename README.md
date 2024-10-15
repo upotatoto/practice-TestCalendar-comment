@@ -16,7 +16,6 @@
 - Spring Security
 - JWT (JSON Web Token)
 - MySQL
-- Maven
 - Postman (API 테스트)
 
 ## 프로젝트 파일 구조
@@ -112,10 +111,3 @@ mvn spring-boot:run
 - **Response**:
   - 성공 시: JWT 토큰 반환
 
-### JWT 인증 헤더 사용
-로그인 후 반환된 JWT 토큰을 API 요청에 사용합니다.
-
-- **Authorization 헤더**:
-  ```
-  Authorization: Bearer <JWT 토큰>
-  ```
