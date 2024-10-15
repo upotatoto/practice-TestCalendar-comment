@@ -1,33 +1,3 @@
-```
-spring-comment-calendar
- ├── src
- │   └── main
- │       ├── java
- │       │   └── com.sparta.springcommentcalendar
- │       │       ├── config
- │       │       │   └── JwtConfig.java              // JWT 설정
- │       │       ├── controller
- │       │       │   └── AuthController.java         // 인증 관련 컨트롤러 (회원가입, 로그인)
- │       │       ├── dto
- │       │       │   └── UserDTO.java                // 사용자 데이터 전송 객체
- │       │       ├── entity
- │       │       │   └── User.java                   // 사용자 엔티티
- │       │       ├── repository
- │       │       │   └── UserRepository.java         // 사용자 저장소
- │       │       ├── security
- │       │       │   ├── JwtAuthenticationFilter.java // JWT 인증 필터
- │       │       │   ├── JwtTokenProvider.java        // JWT 토큰 생성 및 검증
- │       │       │   └── SecurityConfig.java          // 보안 설정
- │       │       └── service
- │       │           └── UserService.java            // 사용자 서비스
- │       └── resources
- │           ├── application.properties              // 애플리케이션 설정 파일
- │           └── schema.sql                          // 데이터베이스 스키마 파일
- ├── .gitignore                                      // Git에서 무시할 파일 목록
- ├── README.md                                       // 프로젝트 설명 파일
- └── pom.xml                                         // Maven 종속성 관리 파일
-```
-
 # Spring Comment Calendar
 
 ## 프로젝트 개요
